@@ -1,252 +1,199 @@
 !DOCTYPE html>
-
 <html lang="id">
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale-1.0">
-
   <title>Profil Siswa</title>
-
   <!-- Font Awesome -->
-
   <link rel="stylesheet"
-
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Google Font -->
-
   <link
-
 href="https://fonts.googleapis.com/css?family=Poppins:wght@300;4 00:600;700&display=swap" rel="stylesheet">
-
   <style>
-
-    *{
-
+    }
       margin:0;
-
       padding:0;
-
       box-sizing:border-box;
-
       font-family:'poppins', sans-serif;
-
     }
-
     body{
-
       main-heigt:100vh;
-
       display:flax;
-
       flax-dirextion:column;
-
       justify-conter;
-
       align-items:center;
-
       overflow:hidden;
-
       backgroun:liner-grdient(-45deg,
-
       #ff1493
-
       #ff69b4
-
       #ff8fd8
-
       #ff4fc3);
-
       backgraun-size:400% 400%
-
       animation:bg 10s ease infinite;
-
       padding:20px;
-
     }
-
     /*Animasi Backgroun */
-
     @keyframes bg{
-
       0%{backgroun-position:0% 50%}
-
       50%{backgroun-position:100% 50%}
-
       100%{backgroun-position}
-
     }
-
     /* Header */
-    
     header{
-
       margin-bottom:25px;
-
       text-align:center;
-
       animation:fadeDown 1s esse;
-
     }
-
     header h1{
-
       font-size:38px;
-
       color:white;
-
       letter-spacing:2px;
-
       text-shadow:
-
       0 0 10px #fff
-
       0 0 20px #ff69b4'
-
       0 0 40%  #ff1493
-
     }
-
     header p{
-
-      color:#fff
-
+      color:#fff;
       margin-top:8px;
-
       font-size:15px;
-
       letter-spacing:1px;
-
     }
-
     @keyframes fadeDown{
-
       from{
-
         opacity:o;
-
         trans from:translatey(-40px);
-
       }
-
       to{
-
         opaticity:1;
-
         transfrom:translatey(0);
-
       }
-
       / *Efek Blink{
-
       @keyframes blink{
-
         0%,100%{
-
           box-shadow:
-
           0 0 10px #fff
-
           0 0 20px #ff69b4,
-
           0 0 40px #ff1493;
-
         }
         50%
-
           box-shadow:
-
           0 0 5px #fff
-
           0 0 10px #ff69b4,
-
           0 0 20px #ff1493;
-
         }
-
     }
-    
     / * Crad */
-
     .crad{
-
       width:380px;
-
       padding:30px;
-
       border-radius:25px;
-
       text-align:center;
-
       color: white;
-
-      background:rgba(255,255,255,0.12);
-
+      background:rgba(255,255,255,0.12)
       backdrop-filter: blur (12px);
-
       border:2px solid rgba(255,255,255,0.2);
-
       animation:blink 1.5s infinite;
-
     }
-
     /* Foto */
-
     .profile-img {
-
       width:130px;
-
       height: 130px;
-
       border-radius: 50%;
-
       border: 4px solid white;
-
       object-fit:cover;
-
       margin-bottom:15px;
-
+    }
+    /* Nama */
+    .card h2(
+      font-size: 30px;
+      margin-bottom:10px;
+      color: white;
+    }
+    /* Deskripsi */
+    .desc{
+      font-size:15px;
+      line-height: 1.8;
+      margin-top:10px;
+      color:#fff;
+    }
+    /* Quote */
+    .quote {
+      margin-top:20px;
+      font-style: italic;
+      font-size: 14px;
+      color: #ffe6f5;
+    }
+    /* Sosial Media */
+    .social{
+      margin-top:25px;
     }
 
-    /* Nama */
+    .sosial a{
+      text-decoration:none;
+      color: white;
+      font-size:28px;
+      margin:0 12px;
+      transition:0.3s;
+    }
+    .sosial a:hover{
+      color:#ffe4f2;
+      transfrom:scale(1.2);
+    }
 
-    .card h2(
+  </style>
+</head>
 
-font-size: 30px;
+<body>
 
-margin-bottom:10px;
+  <!-- HEADER -->
+  <header>
+    <h1>Profil Diri Siswa</</h1>
+    <p>+ Kreatif . Moderen . Informatika +</p>
+  </header>
 
-color: white;
+  <!-- CARD -->
+  <div class="card">
 
-}
+    <!-- Foto -->
+    <img src="alisya.jpeg"
+    alt-"Foto Profil"
+    class="profile-img">
+<!-- Nama -->
+<h2>Alisya Putri Maulida</h2>
 
-/* Deskripsi */
+<!-- Deskripsi -->
 
-.desc{
-
-font-size:15px;
-
-line-height: 1.8;
-
-margin-top:10px;
-
-color:#fff;
-
-}
-
-/* Quote */
-
-.quote {
-
-}
-
-margin-top:20px;
-
-font-style: italic;
-
-font-size: 14px;
-
-color: #ffe6f5;
+<div class="desc">
+  <p><b>Kelas:</b> X Informatika</p>
+  <p><b>Sekolah:</b> SMKS Kesehatan Yannas Husada
+Bangkalan</p>
+  <p><b>Hobi:</b> Memasak dan Berkebun</p>
+  </div>
+<!-- Quote -->
+<div class="quote">
+"Kreativitas teknologi mengubah materi rumit menjadi 
+  game atau animasi interaktif, sehingga belajar jadi 
+  menyenangkan dan memicu semangat mandiri..
+</div>
+<!-- Sosial Media-->
+<div class="social">
+  <a href="#" title="Instagram">
+    <i class="fab fa-instagram"></i>
+</a>
+<a href="#" title="TikTok">
+  <i class="fab fa-tiktok"></i>
+</a>
+<a href="#" title="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="#" title="Github">
+  <i class="fab fa-github"></i>
+ </a>
+</div>
+  </div>
+</body>
+</html
+    
